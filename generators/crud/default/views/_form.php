@@ -34,8 +34,8 @@ use yii\widgets\ActiveForm;
     }
 } ?>
     <div class="form-group">
-        <?= "<?= " ?>Html::submitButton('<i class="fa fa-success"></i>'.$model->isNewRecord ? <?= $generator->generateString('Create') ?> : <?= $generator->generateString('Update') ?>, ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-        <?= "<?= " ?>Html::a('<i class="fa fa-remove"></i>'.<?= $generator->generateString('Cancel') ?>, ['index'], ['class' = 'btn btn-default']) ?>
+        <?= "<?= " ?>Html::submitButton('<i class="fa fa-success"></i> '.$model->isNewRecord ? <?= $generator->generateString('Create') ?> : <?= $generator->generateString('Update') ?>, ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= "<?= " ?>Html::a('<i class="fa fa-remove"></i> '.<?= $generator->generateString('Cancel') ?>, ['index'], ['class' => 'btn btn-default']) ?>
     </div>
 
     <?= "<?php " ?>ActiveForm::end(); ?>
